@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<title> Student Admission Form </title>
+<body>
+<h1> Student Admission Form</h1>
+<form>
+<label for="FirstName">First name:</label>
+<input type="text" ><br><br>
+<label for="Last Name">Last Name:</label>
+<input type="text"><br><br>
+<label for="Gender">Gender:</label><br>
+ <label for="male">
+ <input type="radio" id="male" name="gender" value="male">
+   Male
+  </label><br>
+  <label for="female">
+  <input type="radio" id="female" name="gender" value="female">
+   Female
+   </label><br>
+   <label for="other">
+   <input type="radio" id="other" name="gender" value="other">
+    Other
+   </label>
+<br><br>
+<label for="Required Document">Required Document:</label><br>
+<label for="Identity Proof">
+<input type="checkbox" id="Identity proof" name="Required Documents" value="Identity Proof">
+Identity Proof
+</label><br>
+<label for="Marksheet">
+<input type="checkbox" id="Marksheet " name="Required Documents" value="Marksheet">
+Marksheet
+</label><br>
+
+
+  <label for="dob">Date of Birth:</label>
+<input type="date"  id="dob" name="dob"><br><br>
+<label for="PhoneNo:">PhoneNo: </label>
+<input type="text"  id="phoneno" placeholder="Your phone number"..><br><br>
+<label for="Email">Email:</label>
+<input type="email" id="email" placeholder="Your Email.."><br><br>  
+
+ <label for="address">Address:</label>
+ <input type="textarea"  placeholder="Your address..">
+<br><br>
+ <label for="city">City</label> 
+ <input type="text" id="city" name="city" placeholder="Your city.."> <br><br>
+ <label for="state">State</label>
+ <input type="text" id="state" name="state" placeholder="Your state.."> <br><br>
+<label for="zip">Zip Code</label>
+<input type="text" id="zip" name="zip" placeholder="Your zip code.."> <br><br>
+<label for="Courses">Courses</label><br>
+<select>
+<option>Bca</option>
+<option>MCA</option>
+<option>BSC</option>
+</select><br><br>
+<label for="Signature">Signature</label><br>
+<lable for="Photo">Photo</label><br>
+<input type="file" value="Documents"><br><br>
+<input type="Submit" value="Submit">
+</form>
+</body>
+</html>
