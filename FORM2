@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E9D6EF;
+        }
+        .form-container {
+            width: 500px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        input[type=text], input[type=date], input[type=email], input[type=tel], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Admission Form</h2>
+
+<div class="form-container">
+  <form action="/submit_form">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email..">
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address" placeholder="Your address..">
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="Your city..">
+
+    <label for="state">State</label>
+    <input type="text" id="state" name="state" placeholder="Your state..">
+
+    <label for="zip">Zip Code</label>
+    <input type="text" id="zip" name="zip" placeholder="Your zip code..">
+
+    <label for="course">Course</label>
+    <select id="course" name="course">
+    <option value="Select your Course"> Select your course..</option>
+      <option value="bca">BCA</option>
+      <option value="mca">MCA</option>
+      <option value="bscit">BSC IT</option>
+      <option value="mscit">MSC IT</option>
+    </select>
+
+    <label for="additional-info">Additional Information</label>
+    <textarea id="additional-info" name="additional-info" placeholder="Write something.." style="height:200px"></textarea>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
